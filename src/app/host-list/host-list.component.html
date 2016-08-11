@@ -1,0 +1,19 @@
+<div *ngFor="let host of hosts$ | async">
+
+  <br/>
+  <br/>
+
+  <hr/>
+  
+  <div>
+    Host ID: {{host.hostId}}
+  Host name: {{host.name}}
+  </div>
+
+  <div>
+    <button (click)="onNavigate(host)">go to host</button>
+  </div>
+
+  <hr/>
+
+</div>
